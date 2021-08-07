@@ -1,6 +1,7 @@
 import { VFC } from 'react';
 import Link from 'next/link';
-import { FaGithub, FaInstagram, FaTwitter, VscClose } from 'react-icons/all';
+import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { VscClose } from 'react-icons/vsc';
 import { IconLink } from '@/component/common/IconLink';
 
 type Menu = {

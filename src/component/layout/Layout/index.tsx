@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Head from 'next/head';
 import clsx from 'clsx';
-import { VscMenu } from 'react-icons/all';
+import { VscMenu } from 'react-icons/vsc';
 import { useToggle } from 'react-use';
 import { Drawer } from '@/component/common/Drawer';
 import { SideMenu } from '@/component/common/SideMenu';
