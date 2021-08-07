@@ -2,8 +2,11 @@ module.exports = {
   purge: ['./public/**/*.html', './pages/**/*.{js,ts,jsx,tsx}', './component/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    container: {
+      center: true,
+    },
     textColor: {
-      'primary': '#555555',
+      primary: '#555555',
     },
     extend: {
       colors: {
