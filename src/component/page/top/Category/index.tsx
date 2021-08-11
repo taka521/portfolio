@@ -20,7 +20,7 @@ const CategoryComponent: VFC<CategoryProps> = props => (
   <Link href={ props.linkTo }>
     <a>
       <Image src={ props.src } alt={ props.alt } width={ 235 } height={ 463 } className="max-h-96" />
-      <p className="text-center mt-10 tracking-widest">{ props.label }</p>
+      <p className="text-center mt-4 md:mt-8 tracking-widest">{ props.label }</p>
     </a>
   </Link>
 );

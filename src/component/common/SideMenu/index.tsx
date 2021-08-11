@@ -28,7 +28,7 @@ export type SideMenuProps = {
 };
 
 const Component: VFC<SideMenuProps> = props => (
-  <div className="p-8 flex flex-col space-y-20 max-w-min bg-white bg-opacity-10">
+  <div className="p-8 flex flex-col space-y-20 max-w-min">
     <VscClose size={ 32 } className="cursor-pointer" onClick={ props.onClose } />
     <ul className="flex flex-col space-y-8">
       { MENUS.map(menu => (

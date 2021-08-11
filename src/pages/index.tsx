@@ -14,7 +14,7 @@ const TopPageComponent: NextPage = () => (
   <Layout title="TOP">
     <div className="flex flex-col h-full">
       <h2 className="text-center tracking-extrawide py-10 text-xl">TAKAAKI MATSUNAGA</h2>
-      <div className="flex flex-wrap justify-around items-center flex-grow space-y-4">
+      <div className="flex flex-wrap justify-around items-center flex-grow space-y-8 sm:space-y-0">
         { CATEGORIES.map(c => <Category { ...c } key={ c.linkTo } />) }
       </div>
     </div>

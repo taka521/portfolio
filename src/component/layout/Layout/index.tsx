@@ -20,12 +20,12 @@ const Component: FC<LayoutProps> = props => {
         <meta name="description" key="description" content="Matsunaga Takaaki's portfolio" />
       </Head>
 
-      <button className={ clsx('fixed top-8 left-12 transform duration-300', open && 'opacity-0') }
+      <button className={ clsx('fixed top-6 left-6 md:top-8 md:left-8 transform duration-300', open && 'opacity-0') }
               onClick={ () => toggle(true) }>
         <VscMenu size={ 32 } />
       </button>
 
-      <Drawer open={ open } onClose={ () => toggle(false) }>
+      <Drawer className="fixed bg-white bg-opacity-90 z-50" open={ open } onClose={ () => toggle(false) }>
         <SideMenu onClose={ toggle } />
       </Drawer>
 

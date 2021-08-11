@@ -23,8 +23,8 @@ const Component: VFC<DrawerProps> = (props) => {
   }, ['click']);
 
   return (
-    <nav ref={ ref } className={ clsx('transition-all duration-300 ease-in-out', 'top-0', 'h-screen',
-      'overflow-y-scroll', 'absolute', 'transform',
+    <nav ref={ ref } className={ clsx('transition-all duration-300 ease-in-out top-0 h-screen',
+      'overflow-y-scroll transform',
       {
         'translate-x-0': props.open,
         '-translate-x-full': !props.open,
