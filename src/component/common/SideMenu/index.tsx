@@ -1,6 +1,7 @@
 import { VFC } from 'react';
 import Link from 'next/link';
-import { FaGithub, FaInstagram, FaTwitter, VscClose } from 'react-icons/all';
+import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { VscClose } from 'react-icons/vsc';
 import { IconLink } from '@/component/common/IconLink';
 
 type Menu = {
@@ -27,7 +28,7 @@ export type SideMenuProps = {
 };
 
 const Component: VFC<SideMenuProps> = props => (
-  <div className="p-8 flex flex-col space-y-20 max-w-min bg-white bg-opacity-10">
+  <div className="p-8 flex flex-col space-y-20 max-w-min">
     <VscClose size={ 32 } className="cursor-pointer" onClick={ props.onClose } />
     <ul className="flex flex-col space-y-8">
       { MENUS.map(menu => (
